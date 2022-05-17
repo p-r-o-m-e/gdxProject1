@@ -1,6 +1,5 @@
 package com.gdx.game;
 
-import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
@@ -8,13 +7,10 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ScreenUtils;
-import com.badlogic.gdx.Game;
 
 import org.w3c.dom.Text;
 import com.badlogic.gdx.math.Rectangle;
@@ -56,10 +52,9 @@ public class gdxGame implements Screen {
 
 		this.game=game;
 
-//		batch = new SpriteBatch();
 		bucket = new Rectangle();
 		raindrops = new Array<Rectangle>();
-		bucket.x = 800/2 - 64/2;
+		bucket.x = (800/2) - (64/2);
 		bucket.y = 20;
 		bucket.width = 64;
 		bucket.height = 64;
