@@ -50,8 +50,6 @@ public class gdxGame implements Screen {
 
 	public gdxGame (final Drop game) {
 
-		game.disposeScreen(this);
-
 		this.game=game;
 
 		bucket = new Rectangle();

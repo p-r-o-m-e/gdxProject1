@@ -10,8 +10,6 @@ public class Drop extends Game {
 
     public SpriteBatch batch;
     public BitmapFont font;
-    private Screen Gscreen;
-    private boolean gotscreen = false;
 
     public void create() {
         batch = new SpriteBatch();
@@ -22,15 +20,11 @@ public class Drop extends Game {
     public void render() {
         super.render(); // important!
     }
-    public void disposeScreen(Screen Gscreen) {
-        this.Gscreen = Gscreen;
-        this.gotscreen = true;
-    }
+
     public void dispose() {
         batch.dispose();
         font.dispose();
-        if (gotscreen = true )
-            screen.dispose();
+        screen.dispose();
 
     }
 
